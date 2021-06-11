@@ -21,6 +21,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem "haml-rails", "~> 2.0"
 gem 'font-awesome-sass', '~> 5.15.1'
+gem 'simple_form'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
