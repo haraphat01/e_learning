@@ -24,6 +24,7 @@ gem 'font-awesome-sass', '~> 5.15.1'
 gem 'simple_form'
 gem 'faker'
 gem 'devise'
+gem 'hirb', '~> 0.7.3'
 
 
 # Use Redis adapter to run Action Cable in production
