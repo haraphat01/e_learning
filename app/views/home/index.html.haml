@@ -1,0 +1,58 @@
+.jumbotron
+  .display-4
+  What do you plan to learn?
+
+  .p-4
+
+.form-inline.my-2.my-lg-0
+  = form_tag(courses_path, method: :get) do
+    .input-group
+    = text_field_tag :title, params[:title], autocomplete: 'off', placeholder: "Find a course", class: 'form-control-lg'
+    %span.input-group-append
+      %button.btn.btn-primary.btn-sm{:type => "submit"}
+
+
+.card-group
+  .card.card-body
+    %h1
+      .fa.fa-graduation-cap
+    = Course.count
+    online courses
+    .row
+    Explore a variety of fresh topics
+  .card.card-body
+    %h1
+      .fa.fa-chalkboard-teacher
+      /.fa.fa-brain
+    = Course.distinct.count(:user_id)
+    expert instructors
+    .row
+    Find the right instructor for you
+  .card.card-body
+    %h1
+      .fa.fa-user-graduate
+    = User.count
+    active learners
+    .row
+    Join the knowledge sharing community
+  .card.card-body
+    %h1
+      .fa.fa-infinity
+    Lifetime access
+    .row
+    Learn on your schedule
+
+%hr
+%h1 Popular courses
+.card-columns
+  = render 'courses/course'
+%hr
+%h1 Top rated courses
+.card-columns
+  = render 'courses/course'
+%hr
+%h1 Most recent courses
+.card-columns
+  = render 'courses/recent'
+%hr
+%h1 
