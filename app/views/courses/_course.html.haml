@@ -7,8 +7,15 @@
             =course.description
         .card-footer
             .far.fa-clock
+            .fa.fa-globe-africa
+            = course.language
+            .fa.fa-signal
+            = course.level
+            = number_to_currency(course.price)
+        .card-footer
+            .far.fa-clock
             = course.created_at
-            = course.user.email
+            
         .card-footer
             = link_to 'Show', course, class: "btn btn-sm btn-primary"
             = link_to 'Edit', edit_course_path(course), class: "btn btn-sm btn-warning"

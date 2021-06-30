@@ -7,6 +7,10 @@
     = f.input :title
     = f.label :description
     = f.rich_text_area :description
+    = f.input :short_description
+    = f.input :language, collection: [ "English", "Yoruba", "Hausa"]
+    = f.input :level, collection: [ "Beginner", "Intermediate", "Advanced"]
+    = f.input :price, ollection: 0..9999999 
 
   .form-actions
     = f.button :submit
