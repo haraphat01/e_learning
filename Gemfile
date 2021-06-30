@@ -26,7 +26,8 @@ gem 'faker'
 gem 'devise'
 gem 'hirb', '~> 0.7.3'
 gem 'friendly_id', '~> 5.4.0' #to hid the course id
- gem 'pg'
+gem 'pg'
+gem 'ransack'
 
 
 
