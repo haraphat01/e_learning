@@ -6,6 +6,7 @@
   .form-inputs
     = f.input :title
     = f.label :description
+    %small= f.error :description, class: 'text-danger'
     = f.rich_text_area :description
     = f.input :short_description
     = f.input :language, collection: [ "English", "Yoruba", "Hausa"]
