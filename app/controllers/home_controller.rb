@@ -4,4 +4,10 @@ class HomeController < ApplicationController
     @courses = Course.all.limit(3)
     @recent = Course.all.limit(3).order(created_at: :desc )
   end
+
+  # notifications_controller.rb
+def activity
+  @activities = PublicActivity::Activity.all
+end
+
 end

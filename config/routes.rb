@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/index'
+  get 'home/activity'
   devise_for :users
   resources :users, only: [:index]
   resources :courses
