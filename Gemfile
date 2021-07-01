@@ -27,7 +27,8 @@ gem 'devise'
 gem 'hirb', '~> 0.7.3'
 gem 'friendly_id', '~> 5.4.0' #to hid the course id
 gem 'pg'
-gem 'ransack'
+gem 'ransack' 
+#Ransack can be used in one of two modes, simple or advanced. For searching/filtering not requiring complex boolean logic, Ransack's simple mode should meet your needs.
 
 
 
