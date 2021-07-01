@@ -29,6 +29,8 @@ gem 'friendly_id', '~> 5.4.0' #to hid the course id
 gem 'pg'
 gem 'ransack' 
 #Ransack can be used in one of two modes, simple or advanced. For searching/filtering not requiring complex boolean logic, Ransack's simple mode should meet your needs.
+gem 'public_activity' #public_activity provides easy activity tracking for your ActiveRecord
+
 
 
 
