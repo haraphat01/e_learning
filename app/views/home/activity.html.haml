@@ -1,9 +1,14 @@
-%h1 Activity
-- @activities.each do |activity|
-    .row
-    = activity.id
-    = activity.trackable_type
-    = activity.trackable_id
-    = activity.owner
+%h3
+    .text-center
+    Activity
+    .badge.badge-info
+    = @activities.count
+%ul.list-group
+    - @activities.each do |activity|
+        %li.list-group-items
+        = activity.id
+        = activity.trackable_type
+        = activity.trackable_id
+        = activity.owner
 
   
