@@ -9,6 +9,7 @@
         .card-footer 
             -user.roles.each do |role|
                 = role.name
+        = link_to 'Edit role', edit_user_path(user)
 
             
     
