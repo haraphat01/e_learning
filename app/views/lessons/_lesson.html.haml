@@ -1,0 +1,10 @@
+.card
+  .card-header
+    = lesson.title
+  .card-body
+    = lesson.content
+    = lesson.course
+  .card-footer
+    = link_to 'Show', lesson
+    = link_to 'Edit', edit_lesson_path(lesson)
+    = link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' }

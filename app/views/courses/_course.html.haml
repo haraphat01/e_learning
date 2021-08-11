@@ -12,6 +12,8 @@
             .fa.fa-signal
             = course.level
         .card-footer
+            = course.lessons.count
+        .card-footer
             .text-center
             = number_to_currency(course.price)
         .card-footer

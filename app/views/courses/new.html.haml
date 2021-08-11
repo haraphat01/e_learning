@@ -5,3 +5,5 @@
  = render 'form'
  %br
  = link_to 'Back', courses_path
+ = @lessons.each do |lesson|
+ = lesson.title
