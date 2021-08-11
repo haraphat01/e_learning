@@ -15,6 +15,10 @@ class UsersController < ApplicationController
       render :edit
     end
   end
+
+  def online?
+    updated_at > 2.minutes.ago
+  end
   private
   def set_user
     @user = User.find(params[:id])
