@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lessons
   get 'users/index'
   get 'home/activity'
   devise_for :users
