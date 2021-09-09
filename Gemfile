@@ -32,7 +32,7 @@ gem 'ransack'
 gem 'public_activity' #public_activity provides easy activity tracking for your ActiveRecord
 gem "rolify" #Very simple Roles library without any authorization enforcement supporting scope on resource object.
 gem "pundit" #Pundit provides a set of helpers which guide you in leveraging regular Ruby classes and object oriented design patterns to build a simple, robust and scalable authorization system.
-
+gem 'pagy', '~> 3.5'
 
 
 

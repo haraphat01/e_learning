@@ -8,3 +8,5 @@ Course:
     .card-columns
     = render 'courses/course'
     = link_to 'New Course', new_course_path
+    != pagy_bootstrap_nav(@pagy)
+
