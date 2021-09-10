@@ -6,6 +6,7 @@ class Course < ApplicationRecord
         title
     end
     belongs_to :user
+    has_many :enrollments
     has_many :lessons, dependent: :destroy 
     has_rich_text :description 
     extend FriendlyId

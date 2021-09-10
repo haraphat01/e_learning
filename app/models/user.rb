@@ -6,6 +6,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
   
   has_many :courses
+  has_many :enrollments
   rolify
  # use to assign auto role to users
   after_create :assign_default_role
