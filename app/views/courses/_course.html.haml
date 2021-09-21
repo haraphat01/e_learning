@@ -6,6 +6,9 @@
         .card-dody
             =course.description
         .card-footer
+            = enrollment(course)
+            = review_button(course)
+        .card-footer
             .far.fa-clock
             .fa.fa-globe-africa
             = course.language
